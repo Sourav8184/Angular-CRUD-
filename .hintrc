@@ -1,7 +1,5 @@
 {
-  "extends": [
-    "development"
-  ],
+  "extends": ["development"],
   "hints": {
     "typescript-config/consistent-casing": "off",
     "axe/forms": [
@@ -15,6 +13,7 @@
       {
         "button-name": "off"
       }
-    ]
+    ],
+    "button-type": "off"
   }
 }

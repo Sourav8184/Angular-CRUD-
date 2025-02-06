@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { MatTableModule } from '@angular/material/table';
 
 import { AddEmployeeComponent } from '../add-employee/add-employee.component';
 
@@ -12,8 +13,11 @@ import { AddEmployeeComponent } from '../add-employee/add-employee.component';
   templateUrl: './employee.component.html',
   styleUrl: './employee.component.css',
 })
-export class EmployeeComponent {
+export class EmployeeComponent implements OnInit {
   constructor(private dialog: MatDialog) {}
+
+  ngOnInit(): void {}
+
   addEmployee() {
     this.dialog.open(AddEmployeeComponent, {
       width: '50%',
